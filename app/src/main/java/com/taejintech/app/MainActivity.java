@@ -16,8 +16,9 @@ public class MainActivity extends AppCompatActivity {
 
     private FragmentManager fragmentManager;
     private FragmentHome fragment_home;
-    private FragmentWork fragment_work;
-    private FragmentCal fragment_cal;
+    private FragmentCtrl fragment_ctrl;
+    private FragmentCall fragment_call;
+    private FragmentComment fragment_commnet;
     private FragmentMap fragment_map;
     private FragmentTransaction transaction;
 
@@ -32,9 +33,10 @@ public class MainActivity extends AppCompatActivity {
     private void init_fragment(){
         fragmentManager = getSupportFragmentManager();
         fragment_home = new FragmentHome();
-        fragment_work = new FragmentWork();
-        fragment_cal = new FragmentCal();
+        fragment_ctrl = new FragmentCtrl();
+        fragment_call = new FragmentCall();
         fragment_map = new FragmentMap();
+        fragment_commnet = new FragmentComment();
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout, fragment_home).commitAllowingStateLoss();
@@ -68,14 +70,17 @@ public class MainActivity extends AppCompatActivity {
             case R.id.btn_fragment_home:
                 transaction.replace(R.id.frameLayout, fragment_home).commitAllowingStateLoss();
                 break;
-            case R.id.btn_fragment_work:
-                transaction.replace(R.id.frameLayout, fragment_work).commitAllowingStateLoss();
+            case R.id.btn_fragment_ctrl:
+                transaction.replace(R.id.frameLayout, fragment_ctrl).commitAllowingStateLoss();
                 break;
-            case R.id.btn_fragment_cal:
-                transaction.replace(R.id.frameLayout, fragment_cal).commitAllowingStateLoss();
+            case R.id.btn_fragment_call:
+                transaction.replace(R.id.frameLayout, fragment_call).commitAllowingStateLoss();
                 break;
             case R.id.btn_fragment_map:
                 transaction.replace(R.id.frameLayout, fragment_map).commitAllowingStateLoss();
+                break;
+            case R.id.btn_fragment_comment:
+                transaction.replace(R.id.frameLayout, fragment_commnet).commitAllowingStateLoss();
                 break;
         }
     }

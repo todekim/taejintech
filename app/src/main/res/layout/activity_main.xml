@@ -31,33 +31,44 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/ic_home"
+                android:src="@drawable/home"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:contentDescription="Home"
+                android:contentDescription="태진테크 홈"
                 style="?android:attr/borderlessButtonStyle" />
 
         <ImageButton
-                android:id="@+id/btn_fragment_work"
+                android:id="@+id/btn_fragment_ctrl"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/ic_work"
+                android:src="@drawable/sensor"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:contentDescription="Portfolio"
+                android:contentDescription="축산업관리시스템"
                 style="?android:attr/borderlessButtonStyle" />
         <ImageButton
-                android:id="@+id/btn_fragment_cal"
+                android:id="@+id/btn_fragment_call"
                 android:layout_width="wrap_content"
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/ic_cal"
+                android:src="@drawable/phone"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
-                android:contentDescription="Inquiry"
+                android:contentDescription="태진콜"
+                style="?android:attr/borderlessButtonStyle" />
+        <ImageButton
+                android:id="@+id/btn_fragment_comment"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_weight="1"
+                android:onClick="clickHandler"
+                android:src="@drawable/comment"
+                android:adjustViewBounds="true"
+                android:scaleType="fitCenter"
+                android:contentDescription="코멘트"
                 style="?android:attr/borderlessButtonStyle" />
         <ImageButton
                 android:id="@+id/btn_fragment_map"
@@ -65,21 +76,10 @@
                 android:layout_height="50dp"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/ic_map"
+                android:src="@drawable/map"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="Location"
-                style="?android:attr/borderlessButtonStyle" />
-        <ImageButton
-                android:id="@+id/btn_fragment_user"
-                android:layout_width="wrap_content"
-                android:layout_height="50dp"
-                android:layout_weight="1"
-                android:onClick="clickHandler"
-                android:src="@drawable/ic_user"
-                android:adjustViewBounds="true"
-                android:scaleType="fitCenter"
-                android:contentDescription="User"
                 style="?android:attr/borderlessButtonStyle" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
