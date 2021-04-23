@@ -13,6 +13,7 @@
             app:layout_constraintBottom_toTopOf="@id/linearLayout"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginBottom="60dp"
             app:layout_constraintTop_toTopOf="parent">
     </FrameLayout>
 
@@ -22,64 +23,66 @@
             android:layout_height="0dp"
             android:orientation="horizontal"
             android:background="@drawable/border"
+            android:paddingTop="@dimen/bottom_area_padding"
+            android:paddingBottom="@dimen/bottom_area_padding"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">
         <ImageButton
                 android:id="@+id/btn_fragment_home"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/bottom_btn_height"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/home"
+                android:src="@drawable/ic_home"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="태진테크 홈"
-                style="?android:attr/borderlessButtonStyle" />
+                style="?android:attr/borderlessButtonStyle"/>
 
         <ImageButton
                 android:id="@+id/btn_fragment_ctrl"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/bottom_btn_height"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/sensor"
+                android:src="@drawable/ic_ctl"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="축산업관리시스템"
-                style="?android:attr/borderlessButtonStyle" />
+                style="?android:attr/borderlessButtonStyle"/>
         <ImageButton
                 android:id="@+id/btn_fragment_call"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/bottom_btn_height"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/phone"
+                android:src="@drawable/ic_call"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="태진콜"
-                style="?android:attr/borderlessButtonStyle" />
+                style="?android:attr/borderlessButtonStyle"/>
         <ImageButton
                 android:id="@+id/btn_fragment_comment"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/bottom_btn_height"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/comment"
+                android:src="@drawable/ic_comment"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="코멘트"
-                style="?android:attr/borderlessButtonStyle" />
+                style="?android:attr/borderlessButtonStyle"/>
         <ImageButton
                 android:id="@+id/btn_fragment_map"
                 android:layout_width="wrap_content"
-                android:layout_height="50dp"
+                android:layout_height="@dimen/bottom_btn_height"
                 android:layout_weight="1"
                 android:onClick="clickHandler"
-                android:src="@drawable/map"
+                android:src="@drawable/ic_map"
                 android:adjustViewBounds="true"
                 android:scaleType="fitCenter"
                 android:contentDescription="Location"
-                style="?android:attr/borderlessButtonStyle" />
+                style="?android:attr/borderlessButtonStyle"/>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

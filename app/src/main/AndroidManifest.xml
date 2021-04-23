@@ -12,7 +12,7 @@
             android:supportsRtl="true"
             android:theme="@style/AppTheme"
             tools:ignore="GoogleAppIndexingWarning">
-        <meta-data android:name="com.kakao.sdk.AppKey" android:value="2e54c0e58aff8ad1f5d3736f89a4561d"/>
+        <meta-data android:name="com.kakao.sdk.AppKey" android:value="d289ef11959ffded0f6ae382613ee7bd"/>
         <!-- [START fcm_default_icon] -->
         <!-- Set custom default icon. This is used when no icon is set for incoming notification messages.
              See README(https://goo.gl/l4GJaQ) for more. -->

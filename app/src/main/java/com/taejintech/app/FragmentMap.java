@@ -22,15 +22,15 @@ public class FragmentMap extends Fragment {
         mapViewContainer.addView(mapView);
 
         // 중심점 변경
-        mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(37.4796006321825, 126.88461724101714), true);
+        mapView.setMapCenterPoint(MapPoint.mapPointWithGeoCoord(37.47964638846912, 126.88459156982927), true);
 
         // 줌 레벨 변경
         mapView.setZoomLevel(4, true);
 
         //마커 찍기
-        MapPoint MARKER_POINT = MapPoint.mapPointWithGeoCoord(37.4796006321825, 126.88461724101714);
+        MapPoint MARKER_POINT = MapPoint.mapPointWithGeoCoord(37.47964638846912, 126.88459156982927);
         MapPOIItem marker = new MapPOIItem();
-        marker.setItemName("나랑디자인(1544-7959)");
+        marker.setItemName("태진테크(02-3397-3825~6)");
         marker.setTag(0);
         marker.setMapPoint(MARKER_POINT);
         marker.setMarkerType(MapPOIItem.MarkerType.BluePin); // 기본으로 제공하는 BluePin 마커 모양.
