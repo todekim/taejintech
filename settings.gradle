@@ -1,3 +1,4 @@
+include ':sql_test'
 include ':fcm'
 include ':kakaomap'
 include ':app'
