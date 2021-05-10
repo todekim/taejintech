@@ -19,4 +19,5 @@
     <!-- [END fcm_default_icon_string] -->
     <string name="msg_subscribe_failed">Failed to subscribe to weather topic</string>
     <string name="fcm_message">02-3397-3825~6</string>
+    <string name="fcm_save_serverUrl">http://taejintech.co.kr/fcm/register.php</string>
 </resources>

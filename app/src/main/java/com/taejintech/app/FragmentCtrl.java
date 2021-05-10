@@ -19,7 +19,7 @@ public class FragmentCtrl extends Fragment {
 
         myWebView = (WebView)view.findViewById(R.id.webview);
         myWebView.setWebViewClient(new WebViewClient());
-        myWebView.getSettings().setJavaScriptEnabled(true);
+        myWebView.getSettings().setJavaScriptEnabled(false);
         myWebView.loadUrl("http://ctrl.taejintech.co.kr");
 
         return view;

@@ -5,6 +5,7 @@ import android.app.NotificationManager;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.media.RingtoneManager;
 import android.net.Uri;
 import android.os.Build;
@@ -128,10 +129,12 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
      * @param token The new token.
      */
     private void sendRegistrationToServer(String token) {
+        Resources res = getResources();
+        String url = res.getString(R.string.fcm_save_serverUrl);
         // TODO: Implement this method to send token to your app server.
         OkHttpClient client = new OkHttpClient();
-        RequestBody body = new FormBody.Builder().add("Token", token).build();
-        Request request = new Request.Builder().url("http://taejintech.co.kr/fcm/register.php").post(body).build();
+        RequestBody body = new FormBody.Builder().add("Token", token).add("role",Role.ADMIN.getKey()).build();
+        Request request = new Request.Builder().url(url).post(body).build();
         try {
             client.newCall(request).execute();
         } catch (IOException e) {
