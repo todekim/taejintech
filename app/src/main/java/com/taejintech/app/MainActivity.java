@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentHome fragment_home;
     private FragmentCtrl fragment_ctrl;
     private FragmentCall fragment_call;
-    private FragmentComment fragment_commnet;
+    private FragmentComment fragment_comment;
     private FragmentMap fragment_map;
     private FragmentTransaction transaction;
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         fragment_ctrl = new FragmentCtrl();
         fragment_call = new FragmentCall();
         fragment_map = new FragmentMap();
-        fragment_commnet = new FragmentComment();
+        fragment_comment = new FragmentComment();
 
         transaction = fragmentManager.beginTransaction();
         transaction.replace(R.id.frameLayout, fragment_home).commitAllowingStateLoss();
@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
                 transaction.replace(R.id.frameLayout, fragment_map).commitAllowingStateLoss();
                 break;
             case R.id.btn_fragment_comment:
-                transaction.replace(R.id.frameLayout, fragment_commnet).commitAllowingStateLoss();
+                transaction.replace(R.id.frameLayout, fragment_comment).commitAllowingStateLoss();
                 break;
         }
     }

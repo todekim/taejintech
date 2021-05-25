@@ -5,13 +5,13 @@ import androidx.room.Entity;
 import androidx.room.PrimaryKey;
 
 @Entity
-public class User {
+public class Todo {
     @PrimaryKey(autoGenerate = true)
-    public int uid;
+    public int id;
 
-    @ColumnInfo(name = "first_name")
-    public String firstName;
+    @ColumnInfo
+    public String title;
 
-    @ColumnInfo(name = "last_name")
-    public String lastName;
+    @ColumnInfo
+    public Boolean highPriority;
 }
