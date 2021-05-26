@@ -67,13 +67,13 @@ public class MainActivity extends AppCompatActivity {
         transaction = fragmentManager.beginTransaction();
         switch(view.getId())
         {
-            case R.id.btn_fragment_home:
+            case R.id.btn_fragment_home:/*teajintech.co.kr*/
                 transaction.replace(R.id.frameLayout, fragment_home).commitAllowingStateLoss();
                 break;
-            case R.id.btn_fragment_ctrl:
+            case R.id.btn_fragment_ctrl:/*ctrl.teajintech.co.kr*/
                 transaction.replace(R.id.frameLayout, fragment_ctrl).commitAllowingStateLoss();
                 break;
-            case R.id.btn_fragment_call:
+            case R.id.btn_fragment_call:/*call.teajintech.co.kr*/
                 transaction.replace(R.id.frameLayout, fragment_call).commitAllowingStateLoss();
                 break;
             case R.id.btn_fragment_map:
